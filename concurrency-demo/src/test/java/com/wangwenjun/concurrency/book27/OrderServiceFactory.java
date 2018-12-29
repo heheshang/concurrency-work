@@ -1,5 +1,11 @@
 package com.wangwenjun.concurrency.book27;
 
+import com.wangwenjun.concurrency.book19.Future;
+import com.wangwenjun.concurrency.book27.queue.ActiveMessageQueue;
+import com.wangwenjun.concurrency.book27.service.OrderService;
+import com.wangwenjun.concurrency.book27.service.OrderServiceImpl;
+import com.wangwenjun.concurrency.book27.service.OrderServiceProxy;
+
 import static java.lang.Thread.currentThread;
 
 /**
@@ -26,8 +32,11 @@ public class OrderServiceFactory {
 
         OrderService orderService = OrderServiceFactory.toActiveObject(new OrderServiceImpl());
 
-        orderService.order("hello", 1231323);
+        orderService.order("hello", 123);
         System.out.println("Return immediately ");
+        Future<String> stringFuture = orderService.findOrderDetails(123);
+        System.out.println(stringFuture.get());
         currentThread().join();
+
     }
 }

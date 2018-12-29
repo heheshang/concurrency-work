@@ -1,4 +1,6 @@
-package com.wangwenjun.concurrency.book27;
+package com.wangwenjun.concurrency.book27.queue;
+
+import com.wangwenjun.concurrency.book27.message.MethodMessage;
 
 import java.util.LinkedList;
 

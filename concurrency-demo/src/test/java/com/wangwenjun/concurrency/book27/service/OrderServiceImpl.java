@@ -1,7 +1,8 @@
-package com.wangwenjun.concurrency.book27;
+package com.wangwenjun.concurrency.book27.service;
 
 import com.wangwenjun.concurrency.book19.Future;
 import com.wangwenjun.concurrency.book19.FutureService;
+import com.wangwenjun.concurrency.book27.service.OrderService;
 
 import java.util.concurrent.TimeUnit;
 
@@ -24,7 +25,7 @@ public class OrderServiceImpl implements OrderService {
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
-                    return "The order details Information";
+                    return "The order details Information " + input;
                 }
 
                 , orderId, null);

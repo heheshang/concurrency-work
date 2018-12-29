@@ -1,4 +1,4 @@
-package com.wangwenjun.concurrency.book27;
+package com.wangwenjun.concurrency.book27.service;
 
 
 import com.wangwenjun.concurrency.book19.Future;
