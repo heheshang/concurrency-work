@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70495c6b-ede8-408f-995c-a2affaf712bb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/concurrency-demo/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/concurrency-demo/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/concurrency-demo/.gitignore" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/concurrency-demo/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,8 +27,8 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="gitignore" value="2" />
-          <entry key="java" value="378" />
+          <entry key="gitignore" value="8" />
+          <entry key="java" value="379" />
           <entry key="log" value="1" />
           <entry key="md" value="1" />
           <entry key="pom" value="1" />
@@ -39,8 +40,8 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Git file" value="2" />
-          <entry key="JAVA" value="378" />
+          <entry key="Git file" value="8" />
+          <entry key="JAVA" value="379" />
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="Properties" value="2" />
@@ -50,7 +51,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="gitignore" value="13" />
+          <entry key="gitignore" value="36" />
           <entry key="java" value="12570" />
           <entry key="txt" value="21" />
           <entry key="xml" value="2" />
@@ -58,7 +59,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Git file" value="13" />
+          <entry key="Git file" value="36" />
           <entry key="JAVA" value="12570" />
           <entry key="PLAIN_TEXT" value="21" />
           <entry key="XML" value="2" />
@@ -71,15 +72,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/concurrency-demo/src/test/java/com/wangwenjun/concurrency/book27/queue/ActiveMessageQueue.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="54" column="9" lean-forward="true" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="52" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/concurrency-demo/src/test/java/com/wangwenjun/concurrency/book27/message/FindOrderDetailsMessage.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -102,19 +94,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/concurrency-demo/.gitignore">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="13" selection-start-line="13" selection-end-line="13" />
+            <state relative-caret-position="132">
+              <caret line="6" column="5" lean-forward="true" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/concurrency-demo/src/test/java/com/wangwenjun/concurrency/book19/FutureTask.java">
+        <entry file="file://$PROJECT_DIR$/concurrency-demo/src/test/java/com/wangwenjun/concurrency/ConcurrencyDemoApplicationTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-506">
-              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+            <state relative-caret-position="214">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
             </state>
           </provider>
         </entry>
@@ -151,7 +143,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/concurrency-demo/src/test/java/com/wangwenjun/concurrency/book20/GuardedSuspensionQueue.java" />
         <option value="$PROJECT_DIR$/concurrency-demo/src/test/java/com/wangwenjun/concurrency/book21/ApplicationConfiguration.java" />
         <option value="$PROJECT_DIR$/concurrency-demo/src/test/java/com/wangwenjun/concurrency/book21/RuntimeInfo.java" />
         <option value="$PROJECT_DIR$/concurrency-demo/src/test/java/com/wangwenjun/concurrency/book21/ApplicationContext.java" />
@@ -202,6 +193,7 @@
         <option value="$PROJECT_DIR$/concurrency-demo/src/test/java/com/wangwenjun/concurrency/book27/service/OrderServiceProxy.java" />
         <option value="$PROJECT_DIR$/concurrency-demo/src/test/java/com/wangwenjun/concurrency/book27/future/ActiveFuture.java" />
         <option value="$PROJECT_DIR$/concurrency-demo/.gitignore" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -275,6 +267,12 @@
               <item name="concurrency-work" type="b2602c69:ProjectViewProjectNode" />
               <item name="concurrency-work" type="462c0819:PsiDirectoryNode" />
               <item name="concurrency-demo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="concurrency-work" type="b2602c69:ProjectViewProjectNode" />
+              <item name="concurrency-work" type="462c0819:PsiDirectoryNode" />
+              <item name="concurrency-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="concurrency-work" type="b2602c69:ProjectViewProjectNode" />
@@ -384,6 +382,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="add_unversioned_files" value="true" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="ignore_missing_gitignore" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
@@ -421,7 +420,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.OrderServiceFactory">
+  <component name="RunManager" selected="JUnit.ConcurrencyDemoApplicationTests">
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -463,20 +462,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.wangwenjun.concurrency.book25.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LatchTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.wangwenjun.concurrency.book23.LatchTest" />
-      <module name="concurrency-demo" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.wangwenjun.concurrency.book23.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -532,6 +517,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ConcurrencyDemoApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="concurrency-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wangwenjun.concurrency.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.wangwenjun.concurrency" />
+      <option name="MAIN_CLASS_NAME" value="com.wangwenjun.concurrency.ConcurrencyDemoApplicationTests" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -556,19 +556,19 @@
     </configuration>
     <list>
       <item itemvalue="Spring Boot.ConcurrencyDemoApplication" />
-      <item itemvalue="Application.LatchTest" />
       <item itemvalue="Application.TestChatServer" />
       <item itemvalue="Application.LURCacheTest" />
       <item itemvalue="Application.WorkerThreadTest" />
       <item itemvalue="Application.OrderServiceFactory" />
+      <item itemvalue="JUnit.ConcurrencyDemoApplicationTests" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ConcurrencyDemoApplicationTests" />
         <item itemvalue="Application.OrderServiceFactory" />
         <item itemvalue="Application.WorkerThreadTest" />
         <item itemvalue="Application.LURCacheTest" />
         <item itemvalue="Application.TestChatServer" />
-        <item itemvalue="Application.LatchTest" />
       </list>
     </recent_temporary>
   </component>
@@ -591,7 +591,7 @@
       <workItem from="1545785230630" duration="26413000" />
       <workItem from="1545872694682" duration="15727000" />
       <workItem from="1545958482863" duration="19124000" />
-      <workItem from="1546046000267" duration="25001000" />
+      <workItem from="1546046000267" duration="25514000" />
     </task>
     <task id="LOCAL-00001" summary="修改代码结构">
       <created>1546076450908</created>
@@ -614,16 +614,26 @@
       <option name="project" value="LOCAL" />
       <updated>1546076620538</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="修改代码结构">
+      <created>1546076874057</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1546076874057</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
     <history-entry file="ConcurrencyDemoApplicationTests_contextLoads - 2018.12.21 at 17h 26m 19s.xml">
       <configuration name="ConcurrencyDemoApplicationTests.contextLoads" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ConcurrencyDemoApplicationTests - 2018.12.29 at 17h 48m 55s.xml">
+      <configuration name="ConcurrencyDemoApplicationTests" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="144217000" />
+    <option name="totallyTimeSpent" value="144730000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -745,33 +755,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_172/src.zip!/java/lang/ThreadLocal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="147" column="11" selection-start-line="147" selection-start-column="11" selection-end-line="147" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/concurrency-demo/src/test/java/com/wangwenjun/concurrency/book21/ThreadLocalExample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/concurrency-demo/src/test/java/com/wangwenjun/concurrency/book22/AutoSaveThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="726">
-          <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/concurrency-demo/src/test/java/com/wangwenjun/concurrency/book22/1.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
@@ -1144,6 +1127,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/concurrency-demo/src/test/java/com/wangwenjun/concurrency/ConcurrencyDemoApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/concurrency-demo/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="8" lean-forward="true" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/concurrency-demo/src/test/java/com/wangwenjun/concurrency/book27/future/ActiveFuture.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
@@ -1151,10 +1151,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/concurrency-demo/.gitignore">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        <state relative-caret-position="132">
+          <caret line="6" column="5" lean-forward="true" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
         </state>
       </provider>
     </entry>
