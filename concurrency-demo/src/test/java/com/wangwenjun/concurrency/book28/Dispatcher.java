@@ -56,10 +56,12 @@ public class Dispatcher {
         Object subscriberObject = subscriber.getSubscriberObject();
         executorService.execute(() -> {
             try {
+                System.out.println(Thread.currentThread().getName());
                 subscriberMethod.invoke(subscriberObject, event);
             } catch (Exception e) {
 
                 if (null != exceptionHandler) {
+
                     exceptionHandler.handle(e, new BaseEventContext(bus.getBusName(), subscriber, event));
                 }
             }
@@ -96,6 +98,7 @@ public class Dispatcher {
         @Override
         public void execute(Runnable command) {
 
+            System.out.println("SeqExecutorService==>"+Thread.currentThread().getName());
             command.run();
         }
 
@@ -109,7 +112,10 @@ public class Dispatcher {
         @Override
         public void execute(Runnable command) {
 
-            new Thread(command).start();
+            new Thread(()->{
+                System.out.println("PreThreadExecutorService==>"+Thread.currentThread().getName());
+                command.run();
+            }).start();
         }
     }
 

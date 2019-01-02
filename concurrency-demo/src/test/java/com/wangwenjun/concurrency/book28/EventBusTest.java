@@ -10,15 +10,45 @@ package com.wangwenjun.concurrency.book28;
 public class EventBusTest {
 
     public static void main(String[] args) {
-        Bus bus = new EventBus("TestBus");
+//        Bus bus = new EventBus("TestBus");
+//
+//        bus.register(new SimpleSubscriber1());
+//        bus.register(new SimpleSubscriber2());
+//
+//        bus.post("Hello");
+//
+//        System.out.println("=========================");
+//        bus.post("Hello2","test");
 
-        bus.register(new SimpleSubscriber1());
-        bus.register(new SimpleSubscriber2());
+        Bus bus1 = new EventBus("TestBus",Dispatcher.preThreadDispatcher(null));
 
-        bus.post("Hello");
+        bus1.register(new SimpleSubscriber1());
+        bus1.register(new SimpleSubscriber2());
+
+        bus1.post("Hello");
+        bus1.post("Hello");
+        bus1.post("Hello");
+        bus1.post("Hello");
+        bus1.post("Hello");
+        bus1.post("Hello");
+        bus1.post("Hello");
+        bus1.post("Hello");
+        bus1.post("Hello");
 
         System.out.println("=========================");
-        bus.post("Hello2","test");
+        bus1.post("Hello2","test");
+        bus1.post("Hello2","test");
+        bus1.post("Hello2","test");
+        bus1.post("Hello2","test");
+        bus1.post("Hello2","test");
+        bus1.post("Hello2","test");
+        bus1.post("Hello2","test");
+        bus1.post("Hello2","test");
+        bus1.post("Hello2","test");
+        bus1.post("Hello2","test");
+        bus1.post("Hello2","test");
+        bus1.post("Hello2","test");
+        bus1.post("Hello2","test");
     }
 
 }
