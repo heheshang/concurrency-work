@@ -1,7 +1,8 @@
-package com.wangwenjun.concurrency.book27.service;
+package com.wangwenjun.concurrency.book27.active;
 
 import com.wangwenjun.concurrency.book19.Future;
 import com.wangwenjun.concurrency.book19.FutureService;
+import com.wangwenjun.concurrency.book27.service.OrderService;
 
 import java.util.concurrent.TimeUnit;
 
@@ -12,8 +13,9 @@ import java.util.concurrent.TimeUnit;
  * @version v1.0
  * @date 2018年12月29日 下午 4:32
  */
-public class OrderServiceImpl implements OrderService {
+public class ActiveOrderServiceImpl implements OrderService {
 
+    @ActiveMethod
     @Override
     public Future<String> findOrderDetails(long orderId) {
 
@@ -24,12 +26,14 @@ public class OrderServiceImpl implements OrderService {
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
-                    return "The order details Information " + input;
+                    return "ActiveOrderServiceImpl The order details Information " + input;
                 }
 
                 , orderId, null);
     }
 
+
+    @ActiveMethod
     @Override
     public void order(String account, long orderId) {
 
