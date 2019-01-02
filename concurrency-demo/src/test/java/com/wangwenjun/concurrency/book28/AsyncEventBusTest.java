@@ -23,7 +23,7 @@ public class AsyncEventBusTest {
 
         System.out.println("================");
 
-        bus.post("Hello", "test");
+        bus.post("Hello2", "test");
     }
 
 }

@@ -17,8 +17,8 @@ public class EventBusTest {
 
         bus.post("Hello");
 
-        System.out.println("===============");
-        bus.post("Hello","test");
+        System.out.println("=========================");
+        bus.post("Hello2","test");
     }
 
 }

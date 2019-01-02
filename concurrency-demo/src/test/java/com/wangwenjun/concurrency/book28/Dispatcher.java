@@ -29,7 +29,7 @@ public class Dispatcher {
     }
 
     public void dispatch(Bus bus, Registry registry, Object event, String topic) {
-
+        //根据 topic获取所有的subscriber列表
         ConcurrentLinkedQueue<Subscriber> subscribers = registry.scanSubscriber(topic);
 
         if (null == subscribers) {
@@ -38,7 +38,7 @@ public class Dispatcher {
             }
             return;
         }
-
+        //遍历所有方法，并且通过反射的方式进行调用
         subscribers.stream()
                 .filter(subscriber -> !subscriber.isDisable())
                 .filter(subscriber -> {
@@ -88,6 +88,7 @@ public class Dispatcher {
         return new Dispatcher(PRE_EXECUTOR_SERVICE, eventExceptionHandler);
     }
 
+    // 顺序执行的ExecutorService
     private static class SeqExecutorService implements Executor {
 
         private final static SeqExecutorService INSTANCE = new SeqExecutorService();
@@ -100,6 +101,7 @@ public class Dispatcher {
 
     }
 
+    // 每个线程负责一次消息推送
     private static class PreThreadExecutorService implements Executor {
 
         private final static PreThreadExecutorService Instance = new PreThreadExecutorService();
@@ -112,7 +114,6 @@ public class Dispatcher {
     }
 
     //默认EventContext 实现
-
     private static class BaseEventContext implements EventContext {
 
         private final String eventBusName;

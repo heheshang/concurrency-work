@@ -65,36 +65,60 @@ public class EventBus implements Bus {
         this.dispatcher = dispatcher;
     }
 
+    /**
+     * 将注册subscriber 的动作直接委托给Register
+     * @param subscriber
+     */
     @Override
     public void register(Object subscriber) {
 
         this.registry.bind(subscriber);
     }
 
+    /**
+     * 解除注册subscriber 的动作直接委托给Register
+     * @param subscriber
+     */
     @Override
     public void unregister(Object subscriber) {
 
         this.registry.unbind(subscriber);
     }
 
+    /**
+     * 提交event 到默认的topic
+     * @param event
+     */
     @Override
     public void post(Object event) {
 
         this.post(event, DEFAULT_TOPIC);
     }
 
+    /**
+     * 提交event 到指定的topic，具体的动作是由dispatcher来完成的
+     * @param event
+     * @param topic
+     */
     @Override
     public void post(Object event, String topic) {
 
         this.dispatcher.dispatch(this, registry, event, topic);
     }
 
+    /**
+     * 关闭销毁bus
+     */
     @Override
     public void close() {
 
         this.dispatcher.close();
     }
 
+    /**
+     * 返回bus 名称
+     * @return
+     */
     @Override
     public String getBusName() {
 
