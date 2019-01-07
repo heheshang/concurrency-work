@@ -9,3 +9,4 @@
 out
 gen
 /concurrency-demo/target/
+/.idea
