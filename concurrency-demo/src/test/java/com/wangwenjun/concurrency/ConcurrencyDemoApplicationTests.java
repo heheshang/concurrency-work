@@ -16,14 +16,14 @@ import org.springframework.web.context.WebApplicationContext;
 @AutoConfigureMockMvc
 public class ConcurrencyDemoApplicationTests {
 
-    private MockMvc mockMvc;
+    private MockMvc mockMvc1;
 
     @Autowired
     private WebApplicationContext context;
 
     @Before
     public void setUp() {
-        mockMvc = MockMvcBuilders.webAppContextSetup(context).build();
+        mockMvc1 = MockMvcBuilders.webAppContextSetup(context).build();
     }
 
 
