@@ -7,17 +7,17 @@ package com.wangwenjun.concurrency.classloader.chapter1;
  ***************************************/
 public class LoaderClass {
     public static void main(String[] args) {
-/*        MyObject myObject1 = new MyObject();
+        MyObject myObject1 = new MyObject();
         MyObject myObject2 = new MyObject();
         MyObject myObject3 = new MyObject();
         MyObject myObject4 = new MyObject();
 
-
+        //jvm堆中4个myObject 实例对应的class是一个 堆中存class对象 方法区中存class数据结构
         System.out.println(myObject1.getClass() == myObject2.getClass());
         System.out.println(myObject1.getClass() == myObject3.getClass());
         System.out.println(myObject1.getClass() == myObject4.getClass());
 
-        System.out.println(MyObject.x);*/
+        System.out.println(MyObject.x);
 
         System.out.println(Sub.x);
     }

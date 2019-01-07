@@ -20,7 +20,7 @@ public class ClassActiveUse {
 //        System.out.println(Obj.salary);
 //        Obj.printSalary();
 
-//        Class.forName("com.wangwenjun.concurrent.classloader.chapter1.Obj");
+//        Class.forName("com.wangwenjun.concurrency.classloader.chapter1.Child");
 
 
 //        System.out.println(Child.age);
@@ -33,9 +33,9 @@ public class ClassActiveUse {
 
 
         //(3)final修饰的常量会在编译期间放到常量池中，不会初始化类
-//        System.out.println(Obj.salary);
+        System.out.println(Obj.salary);
         //(4)final修饰的复杂类型，在编译期间无法计算得出，会初始化类
-        System.out.println(Obj.x);
+//        System.out.println(Obj.x);
     }
 
 

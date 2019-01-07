@@ -22,6 +22,10 @@ public class BalkingData {
         this.changed = true;
     }
 
+    /**
+     * change 和save 必须成对出现
+     * @param newContent
+     */
     public synchronized void change(String newContent) {
         this.content = newContent;
         this.changed = true;

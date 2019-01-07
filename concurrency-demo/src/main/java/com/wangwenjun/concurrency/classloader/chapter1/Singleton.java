@@ -13,6 +13,8 @@ public class Singleton {
 
     public static int y;
 
+
+//    private static Singleton instance = new Singleton();
     /**
      * int x = 0;
      * int y = 0;

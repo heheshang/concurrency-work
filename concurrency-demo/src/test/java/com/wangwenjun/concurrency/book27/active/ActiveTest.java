@@ -2,7 +2,6 @@ package com.wangwenjun.concurrency.book27.active;
 
 import com.wangwenjun.concurrency.book19.Future;
 import com.wangwenjun.concurrency.book27.service.OrderService;
-import com.wangwenjun.concurrency.book27.service.OrderServiceImpl;
 
 import static com.wangwenjun.concurrency.book27.active.ActiveServiceFactory.active;
 

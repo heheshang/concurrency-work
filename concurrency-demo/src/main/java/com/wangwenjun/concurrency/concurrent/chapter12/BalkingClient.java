@@ -7,7 +7,7 @@ package com.wangwenjun.concurrency.concurrent.chapter12;
  ***************************************/
 public class BalkingClient {
     public static void main(String[] args) {
-        BalkingData balkingData = new BalkingData("C:\\Users\\wangwenjun\\IdeaProjects\\java-concurrency\\design_pattern\\balking.txt", "===BEGIN====");
+        BalkingData balkingData = new BalkingData("D:\\person-work\\concurrency-work\\concurrency-demo\\src\\main\\resources\\balking.txt", "===BEGIN====");
         new CustomerThread(balkingData).start();
         new WaiterThread(balkingData).start();
     }
