@@ -1,5 +1,7 @@
 package com.wangwenjun.concurrency.classloader.chapter4;
 
+import java.io.UnsupportedEncodingException;
+
 /***************************************
  * @author:Alex Wang
  * @Date:2017/4/4 QQ:532500648
@@ -12,13 +14,13 @@ public class SimpleEncrypt {
     private static final byte ENCRYPT_FACTOR = (byte) 0xff;
 
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws UnsupportedEncodingException {
         byte[] bytes = plain.getBytes();
         byte[] encrypt = new byte[bytes.length];
         for (int i = 0; i < bytes.length; i++) {
             encrypt[i] = (byte) (bytes[i] ^ ENCRYPT_FACTOR);
         }
-        System.out.println(new String(encrypt));
+        System.out.println(new String(encrypt,"utf-8"));
 
         byte[] decrypt = new byte[encrypt.length];
         for (int i = 0; i < encrypt.length; i++) {

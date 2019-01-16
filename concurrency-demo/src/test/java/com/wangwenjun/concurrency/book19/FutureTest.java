@@ -40,7 +40,7 @@ public class FutureTest {
             }
             return input.length();
 
-        }, "Hello");
+        }, "Hello", System.out::println);
 
         Optional.of(future1.get()).ifPresent(System.out::println);
     }

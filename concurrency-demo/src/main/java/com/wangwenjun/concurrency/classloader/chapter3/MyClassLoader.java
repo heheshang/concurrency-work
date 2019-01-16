@@ -12,7 +12,7 @@ import java.io.IOException;
  ***************************************/
 public class MyClassLoader extends ClassLoader {
 
-    private final static String DEFAULT_DIR = "G:\\Teaching\\app\\classloader1";
+    private final static String DEFAULT_DIR = "D:\\person-work\\concurrency-work\\concurrency-demo\\target\\classes\\com\\wangwenjun\\concurrency\\classloader";
 
     private String dir = DEFAULT_DIR;
 
