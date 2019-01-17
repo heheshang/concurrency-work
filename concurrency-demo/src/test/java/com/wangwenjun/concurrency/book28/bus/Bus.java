@@ -1,4 +1,4 @@
-package com.wangwenjun.concurrency.book28;
+package com.wangwenjun.concurrency.book28.bus;
 
 /**
  * <B>概要说明：</B>Bus 接口定义了EventBus的所有使用方法<BR>

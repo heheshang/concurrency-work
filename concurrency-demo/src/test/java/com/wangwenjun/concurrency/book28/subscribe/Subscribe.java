@@ -1,4 +1,4 @@
-package com.wangwenjun.concurrency.book28;
+package com.wangwenjun.concurrency.book28.subscribe;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

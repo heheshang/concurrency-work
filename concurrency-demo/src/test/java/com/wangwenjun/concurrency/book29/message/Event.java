@@ -1,4 +1,6 @@
-package com.wangwenjun.concurrency.book29;
+package com.wangwenjun.concurrency.book29.message;
+
+import com.wangwenjun.concurrency.book29.message.Message;
 
 /**
  * <B>概要说明：</B><BR>

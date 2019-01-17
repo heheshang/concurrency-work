@@ -1,5 +1,9 @@
-package com.wangwenjun.concurrency.book28;
+package com.wangwenjun.concurrency.book28.bus;
 
+
+import com.wangwenjun.concurrency.book28.dispatcher.Dispatcher;
+import com.wangwenjun.concurrency.book28.EventExceptionHandler;
+import com.wangwenjun.concurrency.book28.register.Registry;
 
 import java.util.concurrent.Executor;
 

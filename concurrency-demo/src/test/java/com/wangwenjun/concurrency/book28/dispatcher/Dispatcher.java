@@ -1,4 +1,10 @@
-package com.wangwenjun.concurrency.book28;
+package com.wangwenjun.concurrency.book28.dispatcher;
+
+import com.wangwenjun.concurrency.book28.EventExceptionHandler;
+import com.wangwenjun.concurrency.book28.bus.Bus;
+import com.wangwenjun.concurrency.book28.context.EventContext;
+import com.wangwenjun.concurrency.book28.register.Registry;
+import com.wangwenjun.concurrency.book28.subscribe.Subscriber;
 
 import java.lang.reflect.Method;
 import java.util.concurrent.ConcurrentLinkedQueue;
@@ -75,17 +81,17 @@ public class Dispatcher {
         }
     }
 
-    static Dispatcher newDispatcher(EventExceptionHandler eventExceptionHandler, Executor executor) {
+    public static Dispatcher newDispatcher(EventExceptionHandler eventExceptionHandler, Executor executor) {
 
         return new Dispatcher(executor, eventExceptionHandler);
     }
 
-    static Dispatcher seqDispatcher(EventExceptionHandler eventExceptionHandler) {
+    public static Dispatcher seqDispatcher(EventExceptionHandler eventExceptionHandler) {
 
         return new Dispatcher(SEQ_EXECUTOR_SERVICE, eventExceptionHandler);
     }
 
-    static Dispatcher preThreadDispatcher(EventExceptionHandler eventExceptionHandler) {
+    public static Dispatcher preThreadDispatcher(EventExceptionHandler eventExceptionHandler) {
 
         return new Dispatcher(PRE_EXECUTOR_SERVICE, eventExceptionHandler);
     }
@@ -98,7 +104,7 @@ public class Dispatcher {
         @Override
         public void execute(Runnable command) {
 
-            System.out.println("SeqExecutorService==>"+Thread.currentThread().getName());
+            System.out.println("SeqExecutorService==>" + Thread.currentThread().getName());
             command.run();
         }
 
@@ -112,8 +118,8 @@ public class Dispatcher {
         @Override
         public void execute(Runnable command) {
 
-            new Thread(()->{
-                System.out.println("PreThreadExecutorService==>"+Thread.currentThread().getName());
+            new Thread(() -> {
+                System.out.println("PreThreadExecutorService==>" + Thread.currentThread().getName());
                 command.run();
             }).start();
         }

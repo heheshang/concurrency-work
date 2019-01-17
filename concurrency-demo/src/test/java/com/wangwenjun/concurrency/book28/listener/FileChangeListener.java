@@ -1,4 +1,7 @@
-package com.wangwenjun.concurrency.book28;
+package com.wangwenjun.concurrency.book28.listener;
+
+import com.wangwenjun.concurrency.book28.FileChangeEvent;
+import com.wangwenjun.concurrency.book28.subscribe.Subscribe;
 
 /**
  * <B>概要说明：</B><BR>

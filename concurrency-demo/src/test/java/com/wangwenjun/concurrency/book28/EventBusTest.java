@@ -1,5 +1,11 @@
 package com.wangwenjun.concurrency.book28;
 
+import com.wangwenjun.concurrency.book28.bus.Bus;
+import com.wangwenjun.concurrency.book28.bus.EventBus;
+import com.wangwenjun.concurrency.book28.dispatcher.Dispatcher;
+import com.wangwenjun.concurrency.book28.listener.SimpleSubscriber1;
+import com.wangwenjun.concurrency.book28.listener.SimpleSubscriber2;
+
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -24,7 +30,7 @@ public class EventBusTest {
         System.out.println("★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★");
         TimeUnit.SECONDS.sleep(5L);
 
-        Bus bus1 = new EventBus("TestBus",Dispatcher.preThreadDispatcher(null));
+        Bus bus1 = new EventBus("TestBus", Dispatcher.preThreadDispatcher(null));
 
         bus1.register(new SimpleSubscriber1());
         bus1.register(new SimpleSubscriber2());

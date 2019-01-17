@@ -1,4 +1,4 @@
-package com.wangwenjun.concurrency.book28;
+package com.wangwenjun.concurrency.book28.subscribe;
 
 import java.lang.reflect.Method;
 

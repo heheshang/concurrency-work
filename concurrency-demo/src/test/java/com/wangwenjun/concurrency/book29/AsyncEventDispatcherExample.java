@@ -1,5 +1,9 @@
 package com.wangwenjun.concurrency.book29;
 
+import com.wangwenjun.concurrency.book29.channel.AsyncChannel;
+import com.wangwenjun.concurrency.book29.router.AsyncEventDispatcher;
+import com.wangwenjun.concurrency.book29.message.Event;
+
 import java.util.concurrent.TimeUnit;
 
 /**

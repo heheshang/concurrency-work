@@ -9,5 +9,6 @@ package com.wangwenjun.concurrency.book25;
  */
 @FunctionalInterface
 public interface CacheLoader<K, V> {
+
     V load(K k);
 }

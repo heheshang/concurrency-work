@@ -1,4 +1,7 @@
-package com.wangwenjun.concurrency.book28;
+package com.wangwenjun.concurrency.book28.register;
+
+import com.wangwenjun.concurrency.book28.subscribe.Subscribe;
+import com.wangwenjun.concurrency.book28.subscribe.Subscriber;
 
 import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
@@ -15,7 +18,7 @@ import java.util.concurrent.ConcurrentLinkedQueue;
  * @version v1.0
  * @date 2019年01月02日 上午 10:58
  */
-class Registry {
+public class Registry {
 
     //存储subscriber 集合和topic 之间关系的map
     private final ConcurrentHashMap<String, ConcurrentLinkedQueue<Subscriber>> subscriberContainer = new ConcurrentHashMap<>();

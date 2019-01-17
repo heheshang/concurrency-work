@@ -1,5 +1,7 @@
 package com.wangwenjun.concurrency.book28;
 
+import com.wangwenjun.concurrency.book28.bus.EventBus;
+
 import java.io.IOException;
 import java.nio.file.FileSystems;
 import java.nio.file.Path;

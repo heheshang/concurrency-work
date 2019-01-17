@@ -1,5 +1,9 @@
 package com.wangwenjun.concurrency.book29;
 
+import com.wangwenjun.concurrency.book29.channel.Channel;
+import com.wangwenjun.concurrency.book29.router.EventDispatcher;
+import com.wangwenjun.concurrency.book29.message.Event;
+
 /**
  * <B>概要说明：</B><BR>
  *

@@ -1,4 +1,4 @@
-package com.wangwenjun.concurrency.book29;
+package com.wangwenjun.concurrency.book29.message;
 
 /**
  * <B>概要说明：</B><BR>

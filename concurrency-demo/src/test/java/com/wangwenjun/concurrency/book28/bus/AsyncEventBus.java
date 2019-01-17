@@ -1,4 +1,6 @@
-package com.wangwenjun.concurrency.book28;
+package com.wangwenjun.concurrency.book28.bus;
+
+import com.wangwenjun.concurrency.book28.EventExceptionHandler;
 
 import java.util.concurrent.ThreadPoolExecutor;
 
