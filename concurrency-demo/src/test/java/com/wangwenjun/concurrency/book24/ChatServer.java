@@ -1,6 +1,6 @@
 package com.wangwenjun.concurrency.book24;
 
-import com.wangwenjun.concurrency.chapter13.SimpleThreadPool;
+import com.wangwenjun.concurrency.first.chapter13.SimpleThreadPool;
 
 import java.io.IOException;
 import java.net.ServerSocket;
