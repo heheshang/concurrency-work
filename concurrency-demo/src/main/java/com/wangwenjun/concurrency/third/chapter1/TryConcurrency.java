@@ -11,6 +11,7 @@ public class TryConcurrency {
         Thread t=new Thread("READ-Thread"){
             @Override
             public void run() {
+
                 println(Thread.currentThread().getName());//main
                 readFromDataBase();
             }
@@ -40,6 +41,7 @@ public class TryConcurrency {
     }
 
     private static void writeDataToFile() {
+
         try {
             println("Begin write data to file.");
             Thread.sleep(2000 * 20L);
@@ -52,6 +54,7 @@ public class TryConcurrency {
     }
 
     private static void println(String message) {
+
         System.out.println(message);
     }
 }
