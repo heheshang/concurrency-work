@@ -1173,7 +1173,7 @@ CodeCache: size=245760Kb used=1220Kb max_used=1229Kb free=244539Kb
  compilation: enabled
 
 Compilation events (10 events):
-Event: 1.525 Thread 0x000000001d73f800   72   !   3       com.wangwenjun.concurrency.chapter3.CreateThread5$1::run (10 bytes)
+Event: 1.525 Thread 0x000000001d73f800   72   !   3       com.wangwenjun.concurrency.first.chapter3.CreateThread5$1::run (10 bytes)
 Event: 1.526 Thread 0x000000001d73f800 nmethod 72 0x0000000002f6f590 code [0x0000000002f6f700, 0x0000000002f6f988]
 Event: 1.543 Thread 0x000000001d6df000   73 % !   4       java.lang.ThreadGroup::remove @ 16 (94 bytes)
 Event: 1.550 Thread 0x000000001d6df000 nmethod 73% 0x0000000002f72c50 code [0x0000000002f72da0, 0x0000000002f73338]
@@ -1366,8 +1366,8 @@ Dynamic libraries:
 0x00007ffc01790000 - 0x00007ffc017ec000 	C:\WINDOWS\system32\mswsock.dll
 
 VM Arguments:
-jvm_args: -javaagent:D:\ideaIU-2018.2.2.win\lib\idea_rt.jar=57696:D:\ideaIU-2018.2.2.win\bin -Dfile.encoding=UTF-8 
-java_command: com.wangwenjun.concurrency.chapter3.CreateThread5
+jvm_args: -javaagent:D:\ideaIU-2018.2.2.win\lib\idea_rt.jar=57696:D:\ideaIU-2018.2.2.win\bin -Dfile.encoding=UTF-8
+java_command: com.wangwenjun.concurrency.first.chapter3.CreateThread5
 java_class_path (initial): C:\Program Files\Java\jdk1.8.0_172\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_172\jre\lib\deploy.jar;C:\Program Files\Java\jdk1.8.0_172\jre\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jdk1.8.0_172\jre\lib\ext\cldrdata.jar;C:\Program Files\Java\jdk1.8.0_172\jre\lib\ext\dnsns.jar;C:\Program Files\Java\jdk1.8.0_172\jre\lib\ext\jaccess.jar;C:\Program Files\Java\jdk1.8.0_172\jre\lib\ext\jfxrt.jar;C:\Program Files\Java\jdk1.8.0_172\jre\lib\ext\localedata.jar;C:\Program Files\Java\jdk1.8.0_172\jre\lib\ext\nashorn.jar;C:\Program Files\Java\jdk1.8.0_172\jre\lib\ext\sunec.jar;C:\Program Files\Java\jdk1.8.0_172\jre\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jdk1.8.0_172\jre\lib\ext\sunmscapi.jar;C:\Program Files\Java\jdk1.8.0_172\jre\lib\ext\sunpkcs11.jar;C:\Program Files\Java\jdk1.8.0_172\jre\lib\ext\zipfs.jar;C:\Program Files\Java\jdk1.8.0_172\jre\lib\javaws.jar;C:\Program Files\Java\jdk1.8.0_172\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_172\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_172\jre\lib\jfxswt.jar;C:\Program Files\Java\jdk1.8.0_172\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_172\jre\lib\management-agent.jar;C:\Program Files\Java\jdk1.8.0_172\jre\lib\plugin.jar;C:\Program Files\Java\jdk1.8.0_172\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_172\jre\lib\rt.jar;D:\person-work\concurrency-work\concurrency-demo\target\classes;E:\apache-maven-3.0.5-bin\dubbo\org\springframework\boot\spring-boot-starter\2.1.1.RELEASE\spring-boot-starter-2.1.1.RELEASE.jar;E:\apache-maven-3.0.5-bin\dubbo\org\springframework\boot\spring-boot\2.1.1.RELEASE\spring-boot-2.1.1.RELEASE.jar;E:\apache-maven-3.0.5-bin\dubbo\org\springframework\spring-context\5.1.3.RELEASE\spring-context-5.1.3.RELEASE.jar;E:\apache-maven-3.0.5-bin\dubbo\org\springframework\spring-aop\5.1.3.RELEASE\spring-aop-5.1.3.RELEASE.jar;E:\apache-maven-3.0.5-bin\dubbo\org\springframework\spring-beans\5.1.3.RELEASE\spring-beans-5.1.3.RELEASE.jar;E:\apache-mav
 Launcher Type: SUN_STANDARD
 

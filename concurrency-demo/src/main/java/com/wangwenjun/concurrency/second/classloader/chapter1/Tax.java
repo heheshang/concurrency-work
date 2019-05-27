@@ -1,15 +1,18 @@
+/*
 package com.wangwenjun.concurrency.second.classloader.chapter1;
 
 import javafx.util.Pair;
 
 import java.math.BigDecimal;
 
+*/
 /**
  * 类描述
  *
  * @author zqf
  * @since 2019/1/4 15:33
- */
+ *//*
+
 public class Tax {
 
     //个税起征点
@@ -107,3 +110,4 @@ public class Tax {
         }
     }
 }
+*/

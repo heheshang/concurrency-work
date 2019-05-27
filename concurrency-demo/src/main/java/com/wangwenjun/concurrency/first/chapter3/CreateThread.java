@@ -9,12 +9,7 @@ package com.wangwenjun.concurrency.first.chapter3;
 public class CreateThread {
     public static void main(String[] args) {
         Thread t1 = new Thread();
-        Thread t2 = new Thread() {
-            @Override
-            public void run() {
-                System.out.println("==========");
-            }
-        };
+        Thread t2 = new Thread(() -> System.out.println("=========="));
         t1.start();
         t2.start();
         System.out.println("t1 "+t1.getName());

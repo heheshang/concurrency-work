@@ -5,7 +5,7 @@ package com.wangwenjun.concurrency.second.scala
   * desc:
   */
 class Test {
-  def main(args: Array[String]): Unit = {
-    println("sss")
-  }
+	def main(args: Array[String]): Unit = {
+		println("sss")
+	}
 }

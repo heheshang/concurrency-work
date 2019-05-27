@@ -5,16 +5,16 @@ package com.wangwenjun.concurrency.book17
   * desc:
   */
 trait Lock {
-  /**
-    * 获取显示锁，没有获取锁的线程将被阻塞
-    *
-    * @throws java.lang.InterruptedException
-    */
-  @throws(classOf[InterruptedException])
-  def lock()
+	/**
+	  * 获取显示锁，没有获取锁的线程将被阻塞
+	  *
+	  * @throws java.lang.InterruptedException
+	  */
+	@throws(classOf[InterruptedException])
+	def lock()
 
-  /**
-    * 释放获取的锁
-    */
-  def unlock()
+	/**
+	  * 释放获取的锁
+	  */
+	def unlock()
 }

@@ -50,30 +50,30 @@ package com.wangwenjun.concurrency.second.scala
   *
   */
 object Lesson04 {
-  def main(args: Array[String]): Unit = {
-    for (i <- 1 to 10) {
-      matchTest(i)
-    }
+	def main(args: Array[String]): Unit = {
+		for (i <- 1 to 10) {
+			matchTest(i)
+		}
 
-  }
+	}
 
 
-  /**
-    * 注意点：
-    * 1.模式匹配不仅可以匹配值，还可以匹配类型
-    * 2.模式匹配中，如果匹配到对应的类型或值，就不再继续往下匹配
-    * 3.模式匹配中，都匹配不上时，会匹配到 case _ ，相当于default
-    *
-    * @param x
-    */
-  def matchTest(x: Int) = {
-    x match {
-      case 1 => println("one")
-      case i: Int => println("Int")
-      case 2 => println("two")
-      case 3 => println("three")
-      //当传入的参数无法匹配上面的内容的话，那么就会匹配上_
-      case _ => println("default")
-    }
-  }
+	/**
+	  * 注意点：
+	  * 1.模式匹配不仅可以匹配值，还可以匹配类型
+	  * 2.模式匹配中，如果匹配到对应的类型或值，就不再继续往下匹配
+	  * 3.模式匹配中，都匹配不上时，会匹配到 case _ ，相当于default
+	  *
+	  * @param x
+	  */
+	def matchTest(x: Int) = {
+		x match {
+			case 1 => println("one")
+			case i: Int => println("Int")
+			case 2 => println("two")
+			case 3 => println("three")
+			//当传入的参数无法匹配上面的内容的话，那么就会匹配上_
+			case _ => println("default")
+		}
+	}
 }

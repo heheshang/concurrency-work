@@ -5,5 +5,5 @@ package com.wangwenjun.concurrency.second.concurrent.chapter18
   * desc:
   */
 class Message {
-  var value: String = _
+	var value: String = _
 }

@@ -15,6 +15,7 @@ import java.sql.SQLException;
 public class ThreadContextClassLoader {
 
     public static void main(String[] args) throws ClassNotFoundException, SQLException {
+
         ClassLoader contextClassLoader = Thread.currentThread().getContextClassLoader();
         System.out.println(contextClassLoader);
 

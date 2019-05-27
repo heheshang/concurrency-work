@@ -13,16 +13,16 @@ import org.springframework.web.bind.annotation.{RequestMapping, RequestMethod, R
 class ApiController {
 
 
-  @RequestMapping(value = Array("hello"), method = Array(RequestMethod.GET))
-  @ResponseBody
-  def hello(): Message = {
+	@RequestMapping(value = Array("hello"), method = Array(RequestMethod.GET))
+	@ResponseBody
+	def hello(): Message = {
 
-    TimeUnit.SECONDS.sleep(6)
+		TimeUnit.SECONDS.sleep(6)
 
-    val message = new Message();
+		val message = new Message();
 
-    message.value = "hello "
+		message.value = "hello "
 
-    message
-  }
+		message
+	}
 }
