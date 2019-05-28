@@ -20,32 +20,37 @@ public class Test {
         Node node1 = new Node(1, node4, node2);
 
         BinaryTree binaryTree = new LinkedBinaryTree(node1);
-        //判断二叉树是否为空
-        System.out.println("判断二叉树是否为空===>" + binaryTree.isEmpty());
-
-        //先序遍历递归      先序遍历：1 4 5 2 3 6 7
-        binaryTree.preOrderTraverse();
-        System.out.println();
-
-        //中序遍历递归      中序遍历：4 5 1 3 2 6 7
-        binaryTree.inOrderTraverse();
-        System.out.println();
-
-        //后序遍历递归       后序遍历：5 4 3 7 6 2 1
-        binaryTree.postOrderTraverse();
-        System.out.println();
+//        //判断二叉树是否为空
+//        System.out.println("判断二叉树是否为空===>" + binaryTree.isEmpty());
+//
+//        //先序遍历递归      先序遍历：1 4 5 2 3 6 7
+//        binaryTree.preOrderTraverse();
+//        System.out.println();
+//
+//        //中序遍历递归      中序遍历：4 5 1 3 2 6 7
+//        binaryTree.inOrderTraverse();
+//        System.out.println();
+//
+//        //后序遍历递归       后序遍历：5 4 3 7 6 2 1
+//        binaryTree.postOrderTraverse();
+//        System.out.println();
 
         //中序遍历非递归(借助栈)
+        binaryTree.inOrderByStack();
+        // 先序遍历
+        binaryTree.preOrderByStack();
+        binaryTree.postOrderByStack();
 
-
-        //按照层次遍历（借助队列）
-
-        // 在二叉树中查找某个值
-        //二叉树的高度
-        System.out.println("二叉树的高度" + binaryTree.getHeight());
-
-        // 二叉树的结点数量
-        System.out.println("二叉树的结点数量" + binaryTree.size());
+//        //按照层次遍历（借助队列）
+//        System.out.println("按照层次遍历");
+//        binaryTree.levelOrderByStack();
+//        // 在二叉树中查找某个值
+//        System.out.println("在二叉树中查找某个值" + binaryTree.findKey(1));
+//        //二叉树的高度
+//        System.out.println("二叉树的高度" + binaryTree.getHeight());
+//
+//        // 二叉树的结点数量
+//        System.out.println("二叉树的结点数量" + binaryTree.size());
     }
 
 }
